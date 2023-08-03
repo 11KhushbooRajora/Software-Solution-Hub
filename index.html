@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+ nav {
+  background-color: #19376D;
+  height: 80px;
+  font-size: 1.3rem;
+  color:#F6F1F1;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav-links li {
+  padding: 10px 20px;
+  color: #F6F1F1;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: black;
+}
+
+nav .nav-links a:hover {
+  color: #EADDCA;
+}
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+  background-image: url(./image.png/back.png);
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+}
+
+/* Styling for the slideshow container */
+.slideshow-container {
+    max-width: 600px; /* Adjust the width as per your requirement */
+    margin: auto;
+    position: relative;
+}
+
+/* Optional: Add some styles to the images inside slides */
+.slide img {
+    width: 100%;
+}
+
+/* Optional: Add navigation buttons for next/previous slides */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Optional: Add hover effect to navigation buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.project {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 0.9rem;
+}
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.member {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.member img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.member p {
+    font-size: 0.9rem;
+}
+
+
+
+    footer {
+      background-color:#0a265c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+
+ 
+.container1 {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #576CBC;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #576CBC;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+  
+        
+ h2{
+    background-color:#576CBC;
+  
+    
+}
+
+    .container4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px; /* You can adjust this value to fit your layout */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+         
+</style>
+
+
+
+
+</head>
+<body>
+
+      <nav>
+        <div class="container">
+        <h1 class="logo">Software Solution Hub</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+
+  <section class="hero">
+        <div class="container3">         
+ <h1>Welcome to Software Solution Hub </h1>
+          <i>  <p>Innovative software solutions, unparalleled support.</p></i>
+        <div>
+    </section
+
+   <center> <h2>About Us</h2></center>
+  <div class="container4">
+        <div class="text">
+           
+            <p>Software Solution Hub is a leading technology company dedicated to providing innovative and comprehensive software solutions to businesses of all sizes and industries. With a team of highly skilled and experienced professionals, we specialize in developing customized software applications tailored to meet the specific needs and goals of our clients.
+            we pride ourselves on fostering long-term partnerships with our clients, serving as their trusted technology advisor and assisting them in achieving their business objectives. Whether you are a startup, a small business, or a large enterprise, we are here to provide you with reliable, scalable, and future-proof software solutions that drive success in the digital age. Let us be your strategic partner on your journey to digital transformation.</p>
+        </div>
+        <div class="image">
+            <img src="https://webitsolutionhub.com/wp-content/uploads/2022/12/d111.jpg" alt=" Image">
+        </div>
+    </div> 
+   
+    <center><h2>Our Services<h2></center>
+   <div class="slideshow-container"><center>
+     
+        <div class="slide">
+            <img src="./image.png/web.png" alt="Slide 1" >
+        </div>
+        <div class="slide">
+            <img src="./image.png/App.png" alt="Slide 2">
+        </div>
+         <div class="slide">
+            <img src="./image.png/Host.png" alt="Slide 3">
+        </div>
+        </center>
+    </div>
+    <center><h2>Our Potfolio<h2></center>
+
+  <div class="container">
+ 
+        <div class="project">
+        
+            <img src="https://www.shiksha.com/online-courses/articles/wp-content/uploads/sites/11/2021/12/Programming-vs-Web-Development.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+        </div>
+        <div class="project">
+            <img src="https://www.webhopers.com/wp-content/uploads/2022/02/app-development-company-in-Ambala.png" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Sed eget justo nec nulla feugiat maximus non nec sem.</p>
+        </div>
+    </div>
+    <center><h2>Our Team <h2></center>
+      <section class="team">
+        <div class="member">
+            <img src="https://m.media-amazon.com/images/I/41B3Q0XgFVL._AC_UF1000,1000_QL80_.jpg" alt="Team Member 1">
+            <br><h3>John Doe</h3>
+            <br><h4>CEO & Founder</h4>
+        </div>
+        <div class="member">
+            <img src="https://m.media-amazon.com/images/I/31Famq8Rb1L._AC_UF1000,1000_QL80_.jpg" alt="Team Member 2">
+          <br>  <h3>Jane Smith</h3>
+           <br> <h4>CTO</h4>
+            
+        </div>
+    </section>
+ <center><h2>Contact Us</h2></center>
+<div class="container1">
+    
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+     
+    <footer>
+    <p>&copy; 2023 Software Solutions Hub. All rights reserved.</p>
+  </footer>
+</body>
+
+<script>
+    
+    let slideIndex = 0;
+
+function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds
+}
+
+showSlides();
+
+
+
+    </script>
+</html>
